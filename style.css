@@ -1,0 +1,486 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+header{
+    width: 100%;
+    height:150px;
+    background-color: black ; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+/* .logo{
+    float: left;
+} */
+.logo img{
+    width: 70px;
+    border-radius: 100%;
+    cursor: pointer;
+    padding-top: 10px;
+}
+/* nav{
+    line-height: 50px;
+    float: right;
+} */
+nav ul{
+    line-height: 60px;
+}
+nav ul li{
+    display: inline;
+    padding-left: 30px;
+} 
+nav ul li a{
+    color: #fff;
+
+}
+.menu-icon{
+    width: 45px;
+    cursor: pointer;
+}
+
+nav ul li a:hover{
+    color: #fff724;
+} 
+.content{
+    background: #000;
+    height: 600px;
+    padding: 100px 0 0 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-box{
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    float: left;
+}
+
+.text-box h1{
+    color: #fff;
+    font-size: 150%;
+    line-height: 100px;
+}
+.text-box p{
+    color: #fff;
+}
+
+.text-box a{
+    color: #fff;
+    margin-top: 30px;
+    display: inline-block;
+    border-radius: 6px;
+    border: 2px solid #fff724;
+    color: #fff724;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+
+.text-box .btn{
+    background: #fff724;
+    color: #000;
+    margin-left: 30px;
+    font-weight: 600;
+}
+.right img{
+    border-radius: 40px;
+    height: 400px;
+    width: 300px;
+}
+#skills{
+    display: flex;
+}
+.skills-bar{
+    float: left;
+    width: 100%;
+    background:  #fff;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0,2);
+}
+.skills-bar h4{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+}
+.skills-bar h4:hover{
+    color: red;
+}
+.skills-bar .bar{
+    margin: 20px;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transform: scakeX(0);
+    background: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0.05),
+                      0px 1px rgba(255,255,255,0.8 ),
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 100%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+}
+.progress-line.html span{
+    width: 90%
+}
+.progress-line.css span{
+    width: 85%
+}
+.progress-line.react span{
+    width: 60%
+}
+.progress-line.javascript span{
+    width: 75%
+}
+.bar .progress-line span::before{
+    position: absolute;
+     content: "";
+     right: 0;
+     top: -10px;
+     height: 0;
+     width: 0;
+     border: 7px solid transparent;
+     border-bottom-width: 0px;
+     border-right-width: 0px;
+     border-top-color: #000;
+}
+.bar .progress-line span::after{
+    position: absolute;
+     right: 0;
+     top: -28px;
+     color: #fff;
+     font-size: 12px;
+     font-weight: 500;
+     background: #000;
+     padding: 1px 8px;
+     border-radius: 3px;
+}
+.progress-line.html span::after{
+    content: "90%"
+}
+.progress-line.css span::after{
+    content: "85%"
+}
+.progress-line.react span::after{
+    content: "60%"
+}
+.progress-line.javascript span::after{
+    content: "75%"
+}
+.svg{
+    float: right;
+    margin-bottom: 30px;
+}
+
+#education{
+    display: flex;
+    margin-top: -80px;
+}
+.education-bar{
+    float: right;
+    width: 100%;
+    background:  #fff;
+    padding: 25px 30px;
+    /* box-shadow: 5px 5px 10px rgba(0,0,0,0,2); */
+}
+.education-bar h4{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+}
+.education-bar h4:hover{
+    color: red;
+
+}
+.education-bar .bar{
+    margin: 20px;
+}
+.education-bar .bar .info{
+    margin-bottom: 5px;
+}
+.education-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.education-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transform: scakeX(0);
+    background: #f0f0f0;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0.05),
+                      0px 1px rgba(255,255,255,0.8 ),
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 100%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+}
+.progress-line.html span{
+    width: 90%
+}
+.progress-line.css span{
+    width: 85%
+}
+.progress-line.react span{
+    width: 60%
+}
+.progress-line.javascript span{
+    width: 75%
+}
+.bar .progress-line span::before{
+    position: absolute;
+     content: "";
+     right: 0;
+     top: -10px;
+     height: 0;
+     width: 0;
+     border: 7px solid transparent;
+     border-bottom-width: 0px;
+     border-right-width: 0px;
+     border-top-color: #000;
+}
+.bar .progress-line span::after{
+     position: absolute;
+     right: 0;
+     top: -28px;
+     color: #fff;
+     font-size: 12px;
+     font-weight: 500;
+     background: #000;
+     padding: 1px 8px;
+     border-radius: 3px;
+}
+.progress-line.html span::after{
+    content: "90%"
+}
+.progress-line.css span::after{
+    content: "85%"
+}
+.progress-line.react span::after{
+    content: "60%"
+}
+.progress-line.javascript span::after{
+    content: "75%"
+}
+.svg img{
+    float: left;
+}
+form{
+    text-align: center;
+}
+.tag h2{
+    text-align: center ;
+    font-size: 50px;
+    color: orange;
+}
+.tag h2:hover{
+    color: red;
+}
+.tag h3{
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(91, 91, 91);
+}
+input[type="text"]{
+    margin: 10px 0;
+    width: 30%;
+   
+}
+form button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: orange;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(200, 200, 200);
+}
+footer .left{
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* .user-img{
+    width: 20%;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+} */
+
+/* .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+} */
+/* .ABOUT ME h2{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+}
+.ABOUT ME h2:hover{
+    color: red;
+} */
+/* .user-img{
+    width: 20%;
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+}
+.EDUCATION h3{
+     font-size: 50px;
+     text-align: center;
+     color: orange; 
+     margin-top: 30px; 
+}
+.EDUCATION h3:hover{
+    color: red;
+}
+.SKILLS h4{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+}
+.SKILLS h4:hover{
+    color: red;
+}
+.CONTACT h5{
+    font-size: 50px;
+} */
+/* .label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    } */
+/* html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+} */
+/* .skills-bar{
+    width: 600px;
+    background:  #fff;
+    border-radius: 10px;
+    padding: 25px 30px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0,2);
+}
+.skills-bar .bar{
+    margin: 20px;
+}
+.skills-bar .bar:first-child{
+    margin-top: 0px;
+}
+.skills-bar .bar .info{
+    margin-bottom: 5px;
+}
+.skills-bar .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+}
+.skills-bar .bar .progress-line{
+    position: relative;
+    height: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transform: scakeX(0);
+    background: #f0f0f0;
+   box-shadow: inset 0px 1px 1px rgba(0,0,0.05),
+                      0px 1px rgba(255,255,255,0.8 ),
+}
+.bar .progress-line span{
+    height: 100%;
+    width: 80%;
+    background: #6665ee;
+    position: absolute;
+    border-radius: 10px;
+}
+.progress-line.html span{
+    width: 90%
+}
+.progress-line.css span{
+    width: 85%
+}
+.progress-line.react span{
+    width: 60%
+}
+.progress-line.javascript span{
+    width: 75%
+}
+.bar .progress-line span::before{
+    position: absolute;
+     content: "";
+     right: 0;
+     top: -10px;
+     height: 0;
+     width: 0;
+     border: 7px solid transparent;
+     border-bottom-width: 0px;
+     border-right-width: 0px;
+     border-top-color: #000;
+}
+.bar .progress-line span::after{
+    position: absolute;
+     right: 0;
+     top: -28px;
+     color: #fff;
+     font-size: 12px;
+     font-weight: 500;
+     background: #000;
+     padding: 1px 8px;
+     border-radius: 3px;
+} */
+/* .progress-line.html span::after{
+    content: "90%"
+}
+.progress-line.css span::after{
+    content: "85%"
+}
+.progress-line.react span::after{
+    content: "60%"
+}
+.progress-line.javascript span::after{
+    content: "75%"
+} */
